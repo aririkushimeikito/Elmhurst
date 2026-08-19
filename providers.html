@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123F33">
+<title>Our Team — Elmhurst Medical</title>
+<meta name="description" content="Meet the providers at Elmhurst Medical — internal medicine doctors and a PA who speak Spanish, Bengali, Hindi, Tamil, Urdu and English.">
+<link rel="icon" type="image/svg+xml" href="brand-assets/elmhurst-flower.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="brand-assets/elmhurst-flower-32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="brand-assets/elmhurst-flower-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- impeccable-disable overused-font — Bricolage Grotesque, Plus Jakarta Sans & Fraunces are the typefaces defined in the approved Elmhurst Medical brand kit; intentional and confirmed. -->
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FCF7EE;
+    --sand:#F3E9D7;
+    --sand-2:#EFE3CD;
+    --forest:#123F33;
+    --forest-2:#1B5142;
+    --teal:#0F7A6B;
+    --marigold:#F4A81D;
+    --marigold-soft:#FBE7BE;
+    --coral:#E97A6D;
+    --coral-deep:#C8443B;
+    --sage:#E7EFE5;
+    --peach:#F8E7DB;
+    --ink:#221E17;
+    --muted:#5E574A;
+    --line:#EBE0CC;
+    --line-soft:#F0E8D9;
+    --r:26px;
+    --r-lg:40px;
+    --maxw:1180px;
+    --shadow:0 24px 60px -30px rgba(18,63,51,.28);
+    --shadow-soft:0 12px 40px -24px rgba(18,63,51,.22);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--cream);color:var(--ink);
+    font-family:"Plus Jakarta Sans",system-ui,sans-serif;
+    font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:"Bricolage Grotesque","Plus Jakarta Sans",sans-serif;font-weight:700;line-height:1.07;letter-spacing:-.02em;margin:0;color:var(--forest);}
+  p{margin:0 0 1rem;}
+  img{max-width:100%;}
+  a{color:var(--teal);text-decoration:none;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .eyebrow{display:inline-block;font-weight:700;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--marigold-deep,#B4780A);margin-bottom:18px;}
+  .eyebrow{color:#B47A0C;}
+  .display{font-size:clamp(2rem,4.4vw,3rem);font-weight:700;}
+  h1 em,h2 em,h3 em,.display em{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;color:var(--teal);letter-spacing:0;}
+  .display-xl{font-size:clamp(2.6rem,5.6vw,4.1rem);font-weight:700;}
+  .lead{font-size:1.2rem;line-height:1.62;color:var(--muted);font-weight:500;}
+  .serif{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;}
+  section{padding:104px 0;}
+  .center{text-align:center;}
+  .section-head{max-width:56ch;margin:0 auto 56px;}
+  .section-head.left{margin-left:0;text-align:left;}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:1rem;padding:16px 28px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;transition:transform .18s ease, box-shadow .18s ease, background .18s ease;font-family:inherit;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--forest);color:#fff;box-shadow:0 10px 26px -14px rgba(18,63,51,.6);}
+  .btn-primary:hover{background:var(--forest-2);}
+  .btn-gold{background:var(--marigold);color:#3a2a05;}
+  .btn-ghost{background:transparent;border-color:rgba(18,63,51,.28);color:var(--forest);}
+  .btn-ghost:hover{border-color:var(--forest);}
+
+  .pill{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border-radius:999px;background:var(--sand);color:#9A6A08;}
+
+  /* ---------- NAV ---------- */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(252,247,238,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft);}
+  .nav .inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+  .brandline{display:inline-flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;margin-left:26px;font-family:"Hanken Grotesk",sans-serif;line-height:1;text-decoration:none;}
+  .brandline .wm-top{font-weight:900;font-size:2.9rem;color:var(--forest);letter-spacing:-.035em;}
+  .brandline .wm-bot{display:flex;align-items:center;gap:12px;}
+  .brandline .m{width:47px;height:47px;flex:0 0 auto;}
+  .brandline .wm-med{font-weight:800;font-size:1.82rem;color:#E5920E;text-transform:uppercase;letter-spacing:.05em;}
+  .navlinks{display:flex;margin-left:auto;gap:30px;font-weight:700;font-size:1.05rem;}
+  @media(max-width:1120px){.navcta .tel{display:none;}}
+  .navlinks a{color:var(--forest);opacity:1;}
+  .navlinks a:hover{color:var(--teal);}
+  .navcta{display:flex;align-items:center;gap:18px;margin-left:34px;}
+  .navcta .tel{font-weight:600;color:var(--forest);font-size:1rem;}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:70px 0 40px;position:relative;overflow:hidden;}
+  .hero .glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(244,168,29,.16),transparent 66%);right:-140px;top:-120px;z-index:0;}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;}
+  .hero h1{font-weight:700;letter-spacing:-.02em;line-height:1.06;font-size:clamp(2.7rem,5.8vw,4.4rem);max-width:15ch;}
+  .hero h1 .u{position:relative;white-space:nowrap;font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;color:var(--teal);}
+  .hero h1 .u:after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.16em;background:var(--marigold);z-index:-1;border-radius:5px;}
+  .hero .sub{margin-top:22px;max-width:44ch;font-size:1.22rem;line-height:1.6;color:var(--muted);font-weight:500;}
+  .hero .checks{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px;}
+  .hero .checks li{display:flex;align-items:center;gap:12px;font-weight:500;color:var(--ink);font-size:1.04rem;}
+  .hero .checks li .ck{width:26px;height:26px;flex:0 0 auto;border-radius:50%;background:var(--marigold);color:#3a2a05;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.82rem;}
+  .hero .cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;}
+  .hero .rated{margin-top:28px;display:inline-flex;align-items:center;gap:10px;font-size:1rem;font-weight:600;color:var(--forest);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:11px 20px;box-shadow:var(--shadow-soft);}
+  .hero .rated .stars{color:var(--marigold);letter-spacing:2px;font-size:1.12rem;}
+
+  .hero-visual{position:relative;}
+  .hv-panel{position:relative;border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(155deg,#FBEFD8,#F3E3C9 55%,#E9EFE3);box-shadow:var(--shadow);padding:26px;}
+  .hv-panel .il-lg{width:100%;height:auto;display:block;border-radius:26px;}
+  .chip{position:absolute;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:var(--shadow-soft);font-weight:600;font-size:.9rem;color:var(--forest);display:flex;align-items:center;gap:9px;}
+  .chip .stars{color:var(--marigold);letter-spacing:1px;}
+  .chip-a{left:-14px;bottom:40px;}
+  .chip-b{right:-10px;top:44px;color:#9A6A08;}
+  .chip .fl{width:20px;height:20px;flex:0 0 auto;}
+
+  /* ---------- TRUST STRIP ---------- */
+  .strip{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:var(--cream);}
+  .strip .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:26px 28px;}
+  .strip .it{display:flex;align-items:center;gap:11px;font-weight:600;color:var(--forest);font-size:1rem;}
+  .strip .it .d{width:34px;height:34px;border-radius:50%;background:var(--marigold);display:flex;align-items:center;justify-content:center;color:#3a2a05;flex:0 0 auto;font-weight:800;}
+  .insur{background:var(--cream);border-bottom:1px solid var(--line-soft);}
+  .insur .wrap{padding:34px 28px;text-align:center;}
+  .insur-label{font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#B47A0C;margin-bottom:18px;}
+  .insur-list{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:940px;margin:0 auto;}
+  .ins{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 17px;font-weight:600;font-size:.95rem;color:var(--forest);box-shadow:0 6px 16px -14px rgba(18,63,51,.4);}
+  .ins .fl{width:20px;height:20px;flex:0 0 auto;}
+  .ins.cash{background:var(--marigold);border-color:var(--marigold);color:#3a2a05;}
+
+  /* ---------- DIFFERENCE (soft 4-up) ---------- */
+  .diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .diff{text-align:center;}
+  .diff .im{width:96px;height:96px;border-radius:22px;overflow:hidden;margin:0 auto 12px;box-shadow:var(--shadow-soft);}
+  .diff .im svg{width:100%;height:100%;display:block;}
+  .diff h4{font-size:1rem;font-weight:600;margin-bottom:5px;}
+  .diff p{font-size:.88rem;color:var(--muted);margin:0;max-width:22ch;margin-left:auto;margin-right:auto;}
+
+  /* ---------- SERVICES ---------- */
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px;}
+  .svc{background:#fff;border:1px solid var(--line-soft);border-radius:18px;padding:22px 16px;text-align:center;transition:transform .18s ease, box-shadow .18s ease;}
+  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft);}
+  .svc .ic{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin:0 auto 12px;}
+  .svc h3{font-size:.98rem;font-weight:600;margin-bottom:4px;}
+  .svc p{font-size:.84rem;color:var(--muted);margin:0;}
+  .svc-foot{margin-top:40px;text-align:center;}
+
+  /* ---------- HOW IT WORKS ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .step{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:22px 20px;position:relative;}
+  .step .n{width:38px;height:38px;border-radius:50%;background:var(--marigold);color:#3a2a05;font-family:"Bricolage Grotesque";font-weight:800;font-size:1.02rem;display:flex;align-items:center;justify-content:center;margin-bottom:13px;}
+  .step h3{font-size:1.08rem;font-weight:600;margin-bottom:5px;}
+  .step p{margin:0;color:var(--muted);font-size:.9rem;}
+
+  /* ---------- FEATURE ROWS ---------- */
+  .feature{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  .feature + .feature{margin-top:96px;}
+  .feature .fig{border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(155deg,var(--sage),var(--sand));box-shadow:var(--shadow-soft);padding:22px;}
+  .feature .fig svg{width:100%;height:auto;display:block;}
+  .feature .fig img{width:100%;height:auto;display:block;border-radius:24px;}
+  .member .ph img{width:100%;height:100%;object-fit:cover;display:block;}
+  .feature.rev .fig{order:2;}
+  .feature h2{font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:700;}
+  .feature p{margin-top:16px;font-size:1.12rem;color:var(--muted);max-width:46ch;}
+  /* highlighted differentiator band */
+  .feature.highlight{background:var(--forest);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);gap:0;align-items:stretch;}
+  .feature.highlight .fig{border-radius:0;box-shadow:none;padding:0;background:none;}
+  .feature.highlight .fig img{border-radius:0;width:100%;height:100%;object-fit:cover;}
+  .feature.highlight > div:last-child{padding:48px 50px;}
+  .feature.highlight .eyebrow{color:var(--marigold);}
+  .feature.highlight h2{color:#fff;font-size:clamp(2.1rem,4.2vw,3rem);}
+  .feature.highlight h2 em{color:var(--marigold);}
+  .feature.highlight p{color:rgba(255,255,255,.86);}
+  .feature.highlight .mini li{color:#fff;}
+  @media(max-width:940px){.feature.highlight .fig img{height:auto;}.feature.highlight > div:last-child{padding:34px 26px;}}
+  .feature .mini{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px;}
+  .feature .mini li{display:flex;gap:12px;align-items:flex-start;font-weight:500;color:var(--ink);}
+  .feature .mini li .ck{width:24px;height:24px;flex:0 0 auto;border-radius:50%;background:var(--marigold);color:#3a2a05;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.8rem;margin-top:2px;}
+  .langtag{background:#fff;border:1px solid rgba(200,68,59,.25);color:var(--coral-deep);border-radius:999px;padding:8px 15px;font-weight:600;font-size:.94rem;}
+
+  /* ---------- STATS ---------- */
+  .stats{background:linear-gradient(160deg,#16493B,#0F3A2F);border-radius:var(--r-lg);padding:66px 48px;text-align:center;box-shadow:var(--shadow);}
+  .stats .eyebrow{color:var(--marigold);}
+  .stats h2{color:#fff;}
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:46px;}
+  .stat-grid .big{font-family:"Bricolage Grotesque";font-weight:700;font-size:clamp(2.4rem,4.6vw,3.4rem);color:var(--marigold);line-height:1;}
+  .stat-grid .t{font-weight:600;margin-top:12px;color:#fff;}
+  .stat-grid .d{font-size:.94rem;color:rgba(255,255,255,.72);margin-top:6px;}
+
+  /* ---------- TEAM ---------- */
+  .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .member{background:#fff;border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-soft);}
+  .member .ph{height:300px;background:#EAF0E6;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .member .ph svg{width:88px;height:88px;opacity:.85;}
+  .member .ph img{object-position:center top;}
+  .member .b{padding:22px 24px 26px;}
+  .member .nm{font-family:"Bricolage Grotesque";font-weight:600;font-size:1.22rem;color:var(--forest);}
+  .member .ro{font-size:.92rem;color:var(--muted);margin-top:2px;}
+  .member .lg{margin-top:12px;font-size:.84rem;color:#9A6A08;font-weight:600;}
+  .team-grid{align-items:start;}
+  .member{cursor:pointer;transition:box-shadow .22s ease, transform .22s ease;}
+  .member:hover,.member:focus-within{box-shadow:var(--shadow);transform:translateY(-3px);outline:none;}
+  .member .hint{margin-top:14px;font-size:.78rem;font-weight:700;color:var(--teal);display:inline-flex;align-items:center;gap:6px;transition:opacity .25s ease;}
+  .member:hover .hint,.member:focus-within .hint{opacity:0;}
+  .member-bio{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .42s ease, opacity .32s ease;}
+  .member-bio > div{overflow:hidden;}
+  .member:hover .member-bio,.member:focus-within .member-bio{grid-template-rows:1fr;opacity:1;}
+  .member-bio p{font-size:.9rem;line-height:1.52;color:var(--muted);margin:0;}
+  .member-bio p + p{margin-top:10px;}
+
+  /* ---------- TESTIMONIAL ---------- */
+  .quote{background:var(--sage);border-radius:var(--r-lg);padding:72px 56px;text-align:center;}
+  .quote .mk{font-family:"Fraunces",serif;font-size:3.4rem;color:var(--marigold);line-height:.6;}
+  .quote .q{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.4;color:var(--forest);max-width:26ch;margin:18px auto 24px;}
+  .quote .stars{color:var(--marigold);letter-spacing:3px;font-size:1.2rem;}
+  .quote .by{margin-top:10px;font-weight:600;color:var(--muted);font-size:.95rem;}
+  .reviews{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .review{background:#fff;border:1px solid var(--line-soft);border-radius:var(--r);padding:28px 30px;box-shadow:var(--shadow-soft);}
+  .review .stars{color:var(--marigold);letter-spacing:2px;font-size:1.05rem;margin-bottom:12px;}
+  .review p{font-size:1.05rem;line-height:1.55;color:var(--ink);margin:0 0 14px;}
+  .review .by{font-weight:700;color:var(--muted);font-size:.9rem;}
+  .review .by span{color:var(--teal);}
+  @media(max-width:760px){.reviews{grid-template-columns:1fr;}}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:800px;margin:0 auto;}
+  .faq details{border-bottom:1px solid var(--line);padding:6px 0;}
+  .faq summary{list-style:none;cursor:pointer;padding:22px 8px;font-family:"Bricolage Grotesque";font-weight:600;font-size:1.16rem;color:var(--forest);display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary .ch{width:30px;height:30px;flex:0 0 auto;border-radius:50%;background:var(--sage);color:var(--forest);display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:transform .2s ease;}
+  .faq details[open] summary .ch{transform:rotate(45deg);}
+  .faq .a{padding:0 8px 22px;color:var(--muted);font-size:1.02rem;max-width:66ch;}
+
+  /* ---------- BOOKING ---------- */
+  .book{background:linear-gradient(150deg,#FBEFD6,#F6E4C4);border-radius:var(--r-lg);padding:64px 52px;text-align:center;position:relative;overflow:hidden;}
+  .book h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:700;max-width:20ch;margin:14px auto 0;}
+  .book p{color:#7a5a1a;margin-top:14px;font-size:1.12rem;}
+  .book .cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+  .book .widget-slot{margin:30px auto 0;max-width:560px;background:rgba(255,255,255,.6);border:1.5px dashed rgba(58,42,5,.28);border-radius:var(--r);padding:20px;color:#7a5a1a;font-size:.92rem;}
+  .book .widget-slot b{color:#3a2a05;}
+  .book .note{margin-top:16px;font-size:.9rem;color:#8a6a2a;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  .info-card{background:var(--forest);color:#fff;border-radius:var(--r-lg);padding:44px;}
+  .info-card h2{color:#fff;}
+  .info-card .row{display:flex;gap:15px;padding:17px 0;border-top:1px solid rgba(255,255,255,.14);align-items:flex-start;}
+  .info-card .row:first-of-type{border-top:0;}
+  .info-card .row .ic{color:var(--marigold);font-size:1.15rem;width:26px;text-align:center;flex:0 0 auto;}
+  .info-card .row a{color:#fff;}
+  .info-card .row .lbl{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:3px;}
+  .hours{background:#fff;border:1px solid var(--line-soft);border-radius:var(--r-lg);padding:40px;box-shadow:var(--shadow-soft);}
+  .hours h3{font-size:1.32rem;font-weight:600;margin-bottom:16px;}
+  .hours table{width:100%;border-collapse:collapse;}
+  .hours td{padding:13px 0;border-bottom:1px solid var(--line-soft);font-size:1rem;}
+  .hours td:last-child{text-align:right;font-weight:600;color:var(--forest);}
+  .hours .badge{margin-top:20px;display:inline-block;background:var(--sage);color:var(--forest);border-radius:999px;padding:9px 16px;font-weight:600;font-size:.86rem;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--forest);color:rgba(255,255,255,.78);padding:64px 0 44px;}
+  footer .top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:34px;}
+  footer .brandline{margin-bottom:16px;}
+  footer .brandline .wm-top{color:#fff;font-size:1.34rem;}
+  footer .brandline .wm-med{color:var(--marigold);font-size:.86rem;}
+  footer .brandline .m{width:22px;height:22px;}
+  footer h4{color:#fff;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px;font-family:"Plus Jakarta Sans";font-weight:700;}
+  footer a{color:rgba(255,255,255,.78);display:block;margin-bottom:11px;font-size:.98rem;}
+  footer a:hover{color:var(--marigold);}
+  footer .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;}
+
+  /* ---------- FLOATING ---------- */
+  .float{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;gap:12px;}
+  .float a{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(18,63,51,.28);color:#fff;font-size:1.5rem;}
+  .float .wa{background:#25D366;}
+  .float .call{background:var(--forest);}
+
+  @media(max-width:940px){
+    .hero-grid,.contact,.feature,.feature.rev .fig,footer .top{grid-template-columns:1fr;}
+    .feature.rev .fig{order:0;}
+    .stat-grid{grid-template-columns:1fr 1fr;}
+    .team-grid{grid-template-columns:1fr;}
+    .navlinks,.navcta .tel{display:none;}
+    section{padding:76px 0;}
+  }
+  @media(max-width:560px){
+    .stat-grid,.steps{grid-template-columns:1fr;}
+    .svc-grid,.diff-grid{grid-template-columns:repeat(2,1fr);}
+    .stats,.quote,.book,.info-card,.hours{padding:38px 26px;}
+    .chip-a,.chip-b{position:static;display:inline-flex;margin:10px 8px 0 0;box-shadow:none;border:1px solid var(--line);}
+  }
+  @media(prefers-reduced-motion:reduce){.btn:hover,.svc:hover{transform:none;}html{scroll-behavior:auto;}}
+</style>
+<style>
+  .team-bios{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px;}
+  .tbio{background:#fff;border:1px solid var(--line-soft);border-radius:20px;padding:26px 28px;box-shadow:var(--shadow-soft);}
+  .tbio h3{font-size:1.2rem;color:var(--forest);}
+  .tbio-role{color:#9A6A08;font-weight:600;font-size:.86rem;margin:4px 0 12px;}
+  .tbio p{color:var(--muted);margin:0;font-size:.98rem;line-height:1.55;}
+  .tbio p + p{margin-top:12px;}
+  .tbio-edit{color:#C8443B;font-weight:600;}
+  .post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .post{display:block;background:#fff;border:1px solid var(--line-soft);border-radius:22px;padding:26px;box-shadow:var(--shadow-soft);transition:transform .18s ease,box-shadow .18s ease;color:inherit;}
+  .post:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .post-tag{display:inline-block;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#3a2a05;border-radius:999px;padding:6px 13px;margin-bottom:14px;}
+  .post h3{font-size:1.2rem;color:var(--forest);margin-bottom:8px;line-height:1.2;}
+  .post p{color:var(--muted);font-size:.96rem;margin:0 0 14px;}
+  .post-more{font-weight:700;color:var(--teal);font-size:.92rem;}
+  @media(max-width:900px){.team-bios,.post-grid{grid-template-columns:1fr;}}
+</style>
+
+<style id="bn-font-fix">body{font-family:"Plus Jakarta Sans","Noto Sans Bengali",system-ui,sans-serif;}[lang="bn"] h1,[lang="bn"] h2,[lang="bn"] h3,[lang="bn"] h4{font-family:"Noto Sans Bengali","Hanken Grotesk",sans-serif;}</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="mobile-opt">
+  .nav-toggle,.burger,.navmenu-tel{display:none;}
+  .nav .inner{position:relative;}
+  @media(max-width:940px){
+    .brandline{margin-left:0;}
+    .nav .inner{padding-left:18px;padding-right:18px;}
+    .brandline .wm-top{font-size:2rem;}
+    .brandline .wm-med{font-size:1.24rem;}
+    .brandline .m{width:32px;height:32px;}
+    .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:48px;height:48px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;order:3;margin-left:12px;flex:0 0 auto;}
+    .burger span{display:block;height:2.5px;width:100%;background:var(--forest);border-radius:2px;transition:transform .2s ease,opacity .2s ease;}
+    .nav-toggle:checked ~ .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
+    .nav-toggle:checked ~ .burger span:nth-child(2){opacity:0;}
+    .nav-toggle:checked ~ .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);}
+    .navcta{order:2;margin-left:auto;gap:10px;}
+    .navcta .btn{padding:12px 17px;font-size:.96rem;white-space:nowrap;}
+    .navlinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;margin-left:0;background:#FCF7EE;border-bottom:1px solid var(--line);box-shadow:0 16px 30px rgba(0,0,0,.13);padding:4px 0;z-index:200;}
+    .nav-toggle:checked ~ .navlinks{display:flex;}
+    .navlinks a{padding:16px 26px;font-size:1.12rem;font-weight:700;opacity:1;border-top:1px solid var(--line-soft);}
+    .navlinks a:first-child{border-top:none;}
+    .navmenu-tel{display:block;color:var(--teal);}
+    ul[style*="repeat(3,1fr)"],div[style*="repeat(3,1fr)"],ul[style*="repeat(4,1fr)"],div[style*="repeat(4,1fr)"],ul[style*="repeat(2,1fr)"],div[style*="repeat(2,1fr)"]{grid-template-columns:1fr !important;}
+    img{max-width:100%;height:auto;}
+    table{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    body{overflow-x:hidden;}
+    h1,h2,h3,p,li,a{overflow-wrap:break-word;word-break:break-word;}
+  }
+  @media(max-width:400px){
+    .brandline .wm-top{font-size:1.68rem;}
+    .brandline .wm-med{font-size:1.04rem;}
+    .brandline .m{width:26px;height:26px;}
+    .burger{width:44px;height:44px;margin-left:8px;}
+    .navcta .btn{padding:11px 14px;font-size:.9rem;}
+  }
+</style>
+
+
+
+<style id="prov-link-css">.profile-link{display:inline-block;margin-top:12px;font-weight:800;font-size:.9rem;color:var(--teal);}.profile-link:hover{text-decoration:underline;}</style>
+
+<!--seo-inject-->
+<link rel="canonical" href="https://elmhurstmedical.com/providers.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Elmhurst Medical">
+<meta name="keywords" content="Bengali doctor Elmhurst, Hindi speaking doctor Queens, internal medicine doctor Elmhurst, primary care Elmhurst, doctor Elmhurst Queens, Bengali speaking doctor Queens, Hindi speaking doctor Queens, Spanish speaking doctor Elmhurst, mental health Elmhurst, psychiatry Queens, weight loss doctor Queens, evening doctor Elmhurst, late hours doctor Queens, Medicaid doctor Elmhurst 11373, urgent care Elmhurst, walk-in urgent care Queens, urgent care Jackson Heights, urgent care near me Queens">
+<meta name="geo.region" content="US-NY"><meta name="geo.placename" content="Elmhurst, Queens, New York">
+<meta name="geo.position" content="40.746;-73.8912"><meta name="ICBM" content="40.746, -73.8912">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Elmhurst Medical">
+<meta property="og:title" content="Our Team — Elmhurst Medical"><meta property="og:description" content="Meet the providers at Elmhurst Medical — internal medicine doctors and a PA who speak Spanish, Bengali, Hindi, Tamil, Urdu and English.">
+<meta property="og:url" content="https://elmhurstmedical.com/providers.html"><meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://elmhurstmedical.com/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Elmhurst Medical — Primary &amp; Walk-In Urgent Care in Elmhurst, Queens">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://elmhurstmedical.com/og-image.jpg">
+<meta name="twitter:title" content="Our Team — Elmhurst Medical"><meta name="twitter:description" content="Meet the providers at Elmhurst Medical — internal medicine doctors and a PA who speak Spanish, Bengali, Hindi, Tamil, Urdu and English.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "@id": "https://elmhurstmedical.com/#clinic", "name": "Elmhurst Medical", "alternateName": ["Elmhurst Medical Clinic", "Elmhurst Primary Care"], "url": "https://elmhurstmedical.com/", "telephone": "+1-718-682-7090", "description": "Primary care doctor and medical clinic in Elmhurst, Queens, NYC — Bengali-, Hindi- and Spanish-speaking; family medicine, mental health & psychiatry, weight loss, physicals, vaccines and labs.", "medicalSpecialty": ["PrimaryCare", "InternalMedicine", "Psychiatry"], "address": {"@type": "PostalAddress", "streetAddress": "40-16 74th Street", "addressLocality": "Elmhurst", "addressRegion": "NY", "postalCode": "11373", "addressCountry": "US"}, "geo": {"@type": "GeoCoordinates", "latitude": 40.746, "longitude": -73.8912}, "areaServed": ["Elmhurst", "East Elmhurst", "Corona", "Jackson Heights", "Woodside", "Sunnyside", "Long Island City", "Astoria", "Maspeth", "Middle Village", "Ridgewood", "Glendale", "Rego Park", "Forest Hills", "Kew Gardens", "Fresh Meadows", "Flushing", "College Point", "Woodhaven", "Richmond Hill", "Ozone Park", "Queens", "New York City", "New York"], "availableLanguage": ["English", "Spanish", "Bengali", "Hindi", "Urdu", "Tamil"], "availableService": [{"@type": "MedicalProcedure", "name": "Primary & preventive care"}, {"@type": "MedicalProcedure", "name": "Walk-in urgent care & sick visits"}, {"@type": "MedicalProcedure", "name": "Cancer & preventive screening (colorectal, breast/mammogram, cervical/Pap)"}, {"@type": "MedicalProcedure", "name": "Chronic disease management (diabetes, high blood pressure, thyroid)"}, {"@type": "MedicalTherapy", "name": "Obesity, metabolic syndrome & nutrition counseling"}, {"@type": "MedicalTherapy", "name": "Women's health & PCOS care"}, {"@type": "MedicalTherapy", "name": "Men's health"}, {"@type": "MedicalTherapy", "name": "Mental health care & psychiatry"}, {"@type": "MedicalProcedure", "name": "TLC, CDL & DOT physicals"}, {"@type": "MedicalProcedure", "name": "Immunizations & on-site lab work"}, {"@type": "MedicalProcedure", "name": "Diagnostic consultations & second opinions"}, {"@type": "MedicalProcedure", "name": "Telehealth visits"}], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "19:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "14:30", "closes": "19:30"}], "priceRange": "$$", "currenciesAccepted": "USD"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://elmhurstmedical.com/"}, {"@type": "ListItem", "position": 2, "name": "Our Team", "item": "https://elmhurstmedical.com/providers.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Providers at Elmhurst Medical", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://elmhurstmedical.com/dr-choudhury-hasan.html", "name": "Dr. Choudhury Hasan, MD"}, {"@type": "ListItem", "position": 2, "url": "https://elmhurstmedical.com/dr-ferdous-salauddin.html", "name": "Dr. Ferdous Salauddin, MD"}, {"@type": "ListItem", "position": 3, "url": "https://elmhurstmedical.com/keerthana-rajagopal.html", "name": "Keerthana Rajagopal, PA"}]}</script>
+<!--/seo-inject-->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="bloom">
+    <g fill="#F4A81D">
+      <ellipse cx="50" cy="16" rx="7.5" ry="15"/>
+      <g transform="rotate(30 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(60 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(90 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(120 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(150 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(180 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(210 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(240 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(270 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(300 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+      <g transform="rotate(330 50 50)"><ellipse cx="50" cy="16" rx="7.5" ry="15"/></g>
+    </g>
+    <g fill="#BE7A08" transform="rotate(15 50 50)">
+      <ellipse cx="50" cy="30" rx="6" ry="10"/>
+      <g transform="rotate(45 50 50)"><ellipse cx="50" cy="30" rx="6" ry="10"/></g>
+      <g transform="rotate(90 50 50)"><ellipse cx="50" cy="30" rx="6" ry="10"/></g>
+      <g transform="rotate(135 50 50)"><ellipse cx="50" cy="30" rx="6" ry="10"/></g>
+      <g transform="rotate(180 50 50)"><ellipse cx="50" cy="30" rx="6" ry="10"/></g>
+      <g transform="rotate(225 50 50)"><ellipse cx="50" cy="30" rx="6" ry="10"/></g>
+      <g transform="rotate(270 50 50)"><ellipse cx="50" cy="30" rx="6" ry="10"/></g>
+      <g transform="rotate(315 50 50)"><ellipse cx="50" cy="30" rx="6" ry="10"/></g>
+    </g>
+    <circle cx="50" cy="50" r="12" fill="#0F7A6B"/>
+    <circle cx="50" cy="50" r="5.5" fill="#E97A6D"/>
+  </g>
+
+  <symbol id="il-listen" viewBox="0 0 320 320">
+    <circle cx="160" cy="160" r="150" fill="#F3E3C9"/>
+    <circle cx="112" cy="150" r="34" fill="#8b8178"/><circle cx="112" cy="154" r="31" fill="#C98A5A"/>
+    <rect x="66" y="188" width="94" height="132" rx="47" fill="#E97A6D"/>
+    <circle cx="214" cy="140" r="34" fill="#123F33"/><circle cx="214" cy="144" r="31" fill="#E8B98A"/>
+    <rect x="168" y="178" width="98" height="142" rx="49" fill="#0F7A6B"/>
+    <path d="M217 178 l-11 24 22 0 z" fill="#0c6153"/>
+    <path d="M163 92 c-7 -14 -28 -8 -28 8 c0 13 17 22 28 31 c11 -9 28 -18 28 -31 c0 -16 -21 -22 -28 -8 z" fill="#F4A81D"/>
+  </symbol>
+
+  <symbol id="il-family" viewBox="0 0 320 320">
+    <circle cx="160" cy="160" r="150" fill="#E7EFE5"/>
+    <circle cx="88" cy="168" r="30" fill="#9b9089"/><circle cx="88" cy="172" r="27" fill="#C98A5A"/>
+    <rect x="52" y="200" width="72" height="120" rx="36" fill="#F4A81D"/>
+    <circle cx="160" cy="126" r="34" fill="#123F33"/><circle cx="160" cy="130" r="31" fill="#E8B98A"/>
+    <rect x="118" y="164" width="84" height="156" rx="42" fill="#0F7A6B"/>
+    <circle cx="236" cy="152" r="31" fill="#3a2f28"/><circle cx="236" cy="156" r="28" fill="#7A4E2E"/>
+    <rect x="198" y="186" width="78" height="134" rx="39" fill="#E97A6D"/>
+    <g transform="translate(150 58) scale(0.42)"><use href="#bloom"/></g>
+  </symbol>
+
+  <symbol id="il-welcome" viewBox="0 0 320 320">
+    <circle cx="160" cy="160" r="150" fill="#F8E7DB"/>
+    <circle cx="104" cy="178" r="32" fill="#123F33"/><circle cx="104" cy="182" r="29" fill="#C98A5A"/>
+    <rect x="64" y="214" width="80" height="106" rx="40" fill="#0F7A6B"/>
+    <circle cx="216" cy="178" r="32" fill="#3a2f28"/><circle cx="216" cy="182" r="29" fill="#E8B98A"/>
+    <rect x="176" y="214" width="80" height="106" rx="40" fill="#E97A6D"/>
+    <g><rect x="38" y="74" width="88" height="58" rx="20" fill="#fff"/><path d="M74 128 l0 24 22 -20 z" fill="#fff"/><g transform="translate(82 103) scale(0.34)"><use href="#bloom"/></g></g>
+    <g><rect x="194" y="74" width="88" height="58" rx="20" fill="#123F33"/><path d="M246 128 l0 24 -22 -20 z" fill="#123F33"/><g transform="translate(238 103) scale(0.34)"><use href="#bloom"/></g></g>
+  </symbol>
+
+  <symbol id="il-book" viewBox="0 0 320 320">
+    <circle cx="160" cy="160" r="150" fill="#E7EFE5"/>
+    <rect x="104" y="66" width="112" height="190" rx="26" fill="#123F33"/>
+    <rect x="116" y="90" width="88" height="144" rx="12" fill="#FCF7EE"/>
+    <rect x="116" y="90" width="88" height="28" rx="12" fill="#F4A81D"/>
+    <g fill="#CDBBA0"><circle cx="134" cy="142" r="6"/><circle cx="160" cy="142" r="6"/><circle cx="186" cy="142" r="6"/><circle cx="134" cy="168" r="6"/><circle cx="186" cy="168" r="6"/></g>
+    <circle cx="160" cy="168" r="13" fill="#0F7A6B"/>
+    <path d="M154 168 l4 5 9 -10" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(196 196) scale(0.5)"><use href="#bloom"/></g>
+  </symbol>
+</defs></svg>
+<div class="nav">
+  <div class="wrap inner">
+    <a class="brandline" href="index.html"><span class="wm-top">Elmhurst</span><span class="wm-bot"><svg class="m" viewBox="0 0 100 100" aria-hidden="true"><use href="#bloom"/></svg><span class="wm-med">Medical</span></span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu"><label for="nav-toggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="navlinks">
+      <a href="services.html">Services</a>
+      <a href="providers.html">Our Team</a>
+      <a href="insurance.html">Insurance</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html">Book a visit</a>
+      <a class="navmenu-tel" href="tel:+17186827090">📞 (718) 682-7090</a>
+    </nav>
+    <div class="navcta">
+      <a class="tel" href="tel:+17186827090">(718) 682-7090</a>
+      <a class="btn btn-primary" href="#book">Book a visit</a>
+    </div>
+  </div>
+</div>
+<main>
+<header class="hero" style="padding:64px 0 24px;background:#FCF7EE;">
+  <div class="wrap" style="text-align:center;">
+    <span class="pill">Our team</span>
+    <h1 style="margin-top:16px;max-width:20ch;margin-left:auto;margin-right:auto;">Doctors from the neighborhood, <em>for the neighborhood</em>.</h1>
+    <p class="lead" style="margin:18px auto 0;max-width:60ch;">Meet the providers who will know your name, your family and your history — and who speak the languages you speak at home.</p>
+  </div>
+</header>
+<section style="background:#EAF2E7;">
+  <div class="wrap">
+    <div class="team-grid">
+      <div class="member" tabindex="0"><div class="ph"><img alt="Dr. Choudhury Hasan" src="data:image/webp;base64,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"></div><div class="b"><div class="nm">Dr. Choudhury Hasan</div><div class="ro">Internal Medicine</div><div class="lg">English · Spanish · Bengali · Hindi</div><a class="profile-link" href="dr-choudhury-hasan.html">View full profile →</a><div class="hint">Hover for full bio →</div><div class="member-bio"><div><p>Dr. Hasan earned his medical degree from Ross University School of Medicine and completed his internal medicine residency at Flushing Hospital Medical Center in Queens. Board-certified with more than a decade of experience, he also practices as a hospitalist — caring for acutely ill patients admitted to the hospital. That gives him an unusually complete view of medicine: he has seen how conditions unfold at their most serious, and he brings that depth and vigilance back to your everyday primary care.</p><p>Patients describe him as thorough, honest, and a breath of fresh air. He takes the time to hear your whole story, explains the reasoning behind every recommendation, and builds a real plan you can actually follow — then checks back to make sure it's working. For Dr. Hasan, medicine is personal: he cares for every patient the way he'd want his own family cared for, in the language they're most comfortable speaking.</p></div></div></div></div>
+      <div class="member" tabindex="0"><div class="ph"><img alt="Dr. Ferdous Salauddin" src="data:image/webp;base64,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"></div><div class="b"><div class="nm">Dr. Ferdous Salauddin</div><div class="ro">Internal Medicine</div><div class="lg">Bengali · Hindi · English</div><a class="profile-link" href="dr-ferdous-salauddin.html">View full profile →</a><div class="hint">Hover for full bio →</div><div class="member-bio"><div><p>Dr. Salauddin completed his internal medicine residency at Interfaith Medical Center in Brooklyn (One Brooklyn Health) and is board-certified by the American Board of Internal Medicine. Like Dr. Hasan, he practices as a hospitalist — caring for seriously ill patients admitted at Mount Sinai Hospital of Queens — and also serves as a clinical instructor at the Icahn School of Medicine at Mount Sinai, helping train the next generation of physicians. That high-acuity, academic experience sharpens his judgment in the exam room, so small problems are caught early and nothing important gets missed.</p><p>With additional postgraduate training from the Royal Colleges of Physicians in the UK (MRCP) and a special interest in endocrinology, he is especially strong with diabetes, thyroid, and other hormone-related conditions. He's known for his steady, reassuring presence and his patience with questions big or small — he takes the time to understand each patient's home life, culture, and goals before recommending a plan, so the families he serves always receive thoughtful, up-to-date care.</p></div></div></div></div>
+      <div class="member" tabindex="0"><div class="ph"><img alt="Keerthana Rajagopal, PA" src="data:image/webp;base64,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"></div><div class="b"><div class="nm">Keerthana Rajagopal, PA</div><div class="ro">Physician Assistant</div><div class="lg">Tamil · Hindi · English</div><a class="profile-link" href="keerthana-rajagopal.html">View full profile →</a><div class="hint">Hover for full bio →</div><div class="member-bio"><div><p>Keerthana earned her physician assistant degree at Barry University in Florida and brings warmth and genuine curiosity to every visit. She has a gift for making patients feel heard — turning a routine check-up or a worrying symptom into an unhurried, judgment-free conversation.</p><p>Attentive and deeply patient-centered, she takes pride in the small things: remembering your last visit, explaining results in plain language, and making sure you leave knowing exactly what comes next. Passionate about preventive care and health education, she is especially committed to helping first-generation and multilingual families navigate the system with confidence.</p></div></div></div></div>
+    </div>
+  </div>
+</section>
+<section id="book" style="background:#FBEEE3;">
+  <div class="wrap">
+    <div class="book">
+      <span class="pill">Book in under a minute</span>
+      <h2>Ready when <em>you</em> are.</h2>
+      <p>Text, tap, or call — whatever's easiest. New patients welcome.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+17186827090">📞 Call (718) 682-7090</a>
+        <a class="btn btn-gold" href="https://wa.me/17186827090" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
+        <a class="btn" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener" style="background:var(--teal);color:#fff;">📅 Book on Zocdoc</a>
+      </div>
+      <div class="note">40-16 74th Street, Elmhurst, NY 11373 · Se habla español · বাংলায় কথা বলি</div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="brandline"><span class="wm-top">Elmhurst</span><span class="wm-bot"><svg class="m" viewBox="0 0 100 100" aria-hidden="true"><use href="#bloom"/></svg><span class="wm-med">Medical</span></span></div>
+        <p style="max-width:36ch;font-size:.96rem;">A warm, modern medical home for the families of Elmhurst — across cultures, languages and generations.</p>
+        <div style="margin-top:10px;font-size:.9rem;">Bienvenidos · স্বাগতম · خوش آمدید · स्वागत है · Welcome</div>
+      </div>
+      <div>
+        <h4>Care</h4>
+        <a href="services.html">Services</a>
+        <a href="services.html">Mental health &amp; psych</a>
+        <a href="services.html">TLC &amp; physicals</a>
+        <a href="insurance.html">Insurance &amp; pricing</a>
+      </div>
+      <div>
+        <h4>Clinic</h4>
+        <a href="providers.html">Our team</a>
+        <a href="blog.html">Health guides &amp; blog</a>
+        <a href="contact.html">Contact &amp; hours</a>
+        <a href="booking.html">Book a visit</a>
+        <a href="tel:+17186827090">(718) 682-7090</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© 2026 Elmhurst Medical · 40-16 74th Street, Elmhurst, NY 11373</div>
+      <div>Your family's medical home · Queens 11373</div>
+    </div>
+  </div>
+</footer>
+<div class="float">
+  <a class="wa" href="https://wa.me/17186827090" target="_blank" rel="noopener" aria-label="Book on WhatsApp">💬</a>
+  <a class="call" href="tel:+17186827090" aria-label="Call the clinic">📞</a>
+</div>
+</body>
+</html>
