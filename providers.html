@@ -286,7 +286,19 @@
     .chip-a,.chip-b{position:static;display:inline-flex;margin:10px 8px 0 0;box-shadow:none;border:1px solid var(--line);}
   }
   @media(prefers-reduced-motion:reduce){.btn:hover,.svc:hover{transform:none;}html{scroll-behavior:auto;}}
-</style>
+
+  /* modern refresh */
+  .photo-strip{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:16px;max-width:var(--maxw);margin:34px auto 0;padding:0 28px;}
+  .photo-strip img{width:100%;height:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r,26px);box-shadow:var(--shadow-soft);display:block;}
+  .photo-strip img:first-child{border-radius:160px 26px 26px 26px;}
+  .photo-strip img:last-child{border-radius:26px 160px 26px 26px;}
+  @media(max-width:720px){.photo-strip{grid-template-columns:1fr 1fr;}.photo-strip img:first-child{grid-column:1/-1;border-radius:120px 120px 26px 26px;}}
+
+  
+  svg.ico{width:1.06em;height:1.06em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-0.13em;display:inline-block;flex:0 0 auto;}
+  .ic svg.ico,.rico svg.ico,.fi svg.ico{width:1.12em;height:1.12em;}
+
+  </style>
 <style>
   .team-bios{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px;}
   .tbio{background:#fff;border:1px solid var(--line-soft);border-radius:20px;padding:26px 28px;box-shadow:var(--shadow-soft);}
@@ -465,7 +477,7 @@
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
       <a href="booking.html">Book a visit</a>
-      <a class="navmenu-tel" href="tel:+17186827090">📞 (718) 682-7090</a>
+      <a class="navmenu-tel" href="tel:+17186827090"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (718) 682-7090</a>
     </nav>
     <div class="navcta">
       <a class="tel" href="tel:+17186827090">(718) 682-7090</a>
@@ -481,6 +493,12 @@
     <p class="lead" style="margin:18px auto 0;max-width:60ch;">Meet the providers who will know your name, your family and your history — and who speak the languages you speak at home.</p>
   </div>
 </header>
+<div class="photo-strip">
+  <img src="images/clinicians-notes.webp" alt="Our clinicians reviewing a chart together" loading="lazy">
+  <img src="images/medical-team.webp" alt="The Elmhurst Medical care team" loading="lazy">
+  <img src="images/exam-room-visit.webp" alt="A provider with a patient in the exam room" loading="lazy">
+</div>
+
 <section style="background:#EAF2E7;">
   <div class="wrap">
     <div class="team-grid">
@@ -497,9 +515,9 @@
       <h2>Ready when <em>you</em> are.</h2>
       <p>Text, tap, or call — whatever's easiest. New patients welcome.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="tel:+17186827090">📞 Call (718) 682-7090</a>
-        <a class="btn btn-gold" href="https://wa.me/17186827090" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
-        <a class="btn" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener" style="background:var(--teal);color:#fff;">📅 Book on Zocdoc</a>
+        <a class="btn btn-primary" href="tel:+17186827090"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call (718) 682-7090</a>
+        <a class="btn btn-gold" href="https://wa.me/17186827090" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg> Book on WhatsApp</a>
+        <a class="btn" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener" style="background:var(--teal);color:#fff;"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Book on Zocdoc</a>
       </div>
       <div class="note">40-16 74th Street, Elmhurst, NY 11373 · Se habla español · বাংলায় কথা বলি</div>
     </div>
@@ -537,8 +555,8 @@
   </div>
 </footer>
 <div class="float">
-  <a class="wa" href="https://wa.me/17186827090" target="_blank" rel="noopener" aria-label="Book on WhatsApp">💬</a>
-  <a class="call" href="tel:+17186827090" aria-label="Call the clinic">📞</a>
+  <a class="wa" href="https://wa.me/17186827090" target="_blank" rel="noopener" aria-label="Book on WhatsApp"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg></a>
+  <a class="call" href="tel:+17186827090" aria-label="Call the clinic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
 </div>
 </body>
 </html>

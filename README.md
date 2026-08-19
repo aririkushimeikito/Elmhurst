@@ -8,7 +8,8 @@ Live preview (GitHub Pages): **https://aririkushimeikito.github.io/Elmhurst/**
 ## What's here
 
 - **43 public pages** — plain HTML5, no framework, no build step. Each page is self-contained
-  (inline CSS, images embedded as data URIs).
+  (inline CSS; branded photos embedded as data URIs, stock photography served from `images/`
+  as optimized WebP, ~26 KB average).
 - **Core pages:** `index.html`, `services.html`, `providers.html`, `insurance.html`,
   `contact.html`, `booking.html`, `blog.html`, plus 3 provider profiles.
 - **Blog / guides:** 33 article pages, all linked from `blog.html` (English, Spanish, Bengali).
@@ -24,6 +25,13 @@ Live preview (GitHub Pages): **https://aririkushimeikito.github.io/Elmhurst/**
   with no horizontal scroll.
 - Internal links are **relative**, so the site works at the domain root *and* under a subpath
   (GitHub Pages preview).
+
+## Design system
+
+Modern layout refresh (Aug 2026): hero with arched photo and floating badge chips, angled trust
+marquee, mission collage with stats, photo-driven service and blog cards, forest stats band, and
+a consistent inline SVG icon set (stroke style, brand colors) replacing emoji icons. Brand fonts
+(Bricolage Grotesque / Plus Jakarta Sans / Fraunces) and the brand palette are unchanged.
 
 ## Deployment
 

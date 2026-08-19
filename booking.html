@@ -276,7 +276,19 @@
     .chip-a,.chip-b{position:static;display:inline-flex;margin:10px 8px 0 0;box-shadow:none;border:1px solid var(--line);}
   }
   @media(prefers-reduced-motion:reduce){.btn:hover,.svc:hover{transform:none;}html{scroll-behavior:auto;}}
-</style>
+
+  /* modern refresh */
+  .photo-strip{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:16px;max-width:var(--maxw);margin:34px auto 0;padding:0 28px;}
+  .photo-strip img{width:100%;height:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r,26px);box-shadow:var(--shadow-soft);display:block;}
+  .photo-strip img:first-child{border-radius:160px 26px 26px 26px;}
+  .photo-strip img:last-child{border-radius:26px 160px 26px 26px;}
+  @media(max-width:720px){.photo-strip{grid-template-columns:1fr 1fr;}.photo-strip img:first-child{grid-column:1/-1;border-radius:120px 120px 26px 26px;}}
+
+  
+  svg.ico{width:1.06em;height:1.06em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-0.13em;display:inline-block;flex:0 0 auto;}
+  .ic svg.ico,.rico svg.ico,.fi svg.ico{width:1.12em;height:1.12em;}
+
+  </style>
 
 <style id="bn-font-fix">body{font-family:"Plus Jakarta Sans","Noto Sans Bengali",system-ui,sans-serif;}[lang="bn"] h1,[lang="bn"] h2,[lang="bn"] h3,[lang="bn"] h4{font-family:"Noto Sans Bengali","Hanken Grotesk",sans-serif;}</style>
 
@@ -469,7 +481,7 @@
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
       <a href="booking.html">Book a visit</a>
-      <a class="navmenu-tel" href="tel:+17186827090">📞 (718) 682-7090</a>
+      <a class="navmenu-tel" href="tel:+17186827090"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (718) 682-7090</a>
     </nav>
     <div class="navcta">
       <a class="tel" href="tel:+17186827090">(718) 682-7090</a>
@@ -485,6 +497,12 @@
     <p class="lead" style="margin:18px auto 0;max-width:60ch;">Online, by phone, by text, or on WhatsApp — whichever is easiest for you. Same-day appointments and walk-ins welcome, with evening and Saturday hours.</p>
   </div>
 </header>
+<div class="photo-strip">
+  <img src="images/doctor-laptop.webp" alt="A doctor confirming an appointment on a laptop" loading="lazy">
+  <img src="images/exam-room-visit.webp" alt="A provider with a patient in the exam room" loading="lazy">
+  <img src="images/telehealth-app.webp" alt="Booking care from a phone" loading="lazy">
+</div>
+
 <section style="padding-top:34px;padding-bottom:40px;">
   <div class="wrap">
     <div class="section-head center" style="margin-bottom:8px;">
@@ -493,12 +511,12 @@
       <p class="lead" style="margin:14px auto 0;max-width:62ch;">We answer in English, Spanish, Bengali, Hindi and Urdu. New patients welcome — no referral needed.</p>
     </div>
     <div class="reach-grid">
-      <a class="reach" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener"><span class="rico">📅</span><b>Book online</b><span>See open times on Zocdoc</span></a>
-      <a class="reach" href="tel:+17186827090"><span class="rico">📞</span><b>Call us</b><span>(718) 682-7090</span></a>
-      <a class="reach" href="sms:+17186827090"><span class="rico">💬</span><b>Text us</b><span>Text to book a time</span></a>
-      <a class="reach" href="https://wa.me/17186827090" target="_blank" rel="noopener"><span class="rico">🟢</span><b>WhatsApp</b><span>Chat &amp; book with us</span></a>
+      <a class="reach" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener"><span class="rico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><b>Book online</b><span>See open times on Zocdoc</span></a>
+      <a class="reach" href="tel:+17186827090"><span class="rico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><b>Call us</b><span>(718) 682-7090</span></a>
+      <a class="reach" href="sms:+17186827090"><span class="rico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg></span><b>Text us</b><span>Text to book a time</span></a>
+      <a class="reach" href="https://wa.me/17186827090" target="_blank" rel="noopener"><span class="rico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><b>WhatsApp</b><span>Chat &amp; book with us</span></a>
     </div>
-    <a class="zocbar" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener">📅 Book online on Zocdoc — see open times &amp; book instantly &rarr;</a>
+    <a class="zocbar" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Book online on Zocdoc — see open times &amp; book instantly &rarr;</a>
   </div>
 </section>
 <section style="background:var(--sand);">
@@ -518,16 +536,16 @@
           </table>
           <span class="badge">✿ Same-day &amp; walk-in visits welcome</span>
         </div>
-        <div class="row" style="margin-top:22px;"><span class="ic">📍</span><div><div class="lbl">Address</div><a href="https://maps.google.com/?q=40-16+74th+Street+Elmhurst+NY+11373" target="_blank" rel="noopener">40-16 74th Street<br>Elmhurst, NY 11373</a></div></div>
-        <div class="row"><span class="ic">🚆</span><div><div class="lbl">Getting here</div>Steps from the 74th St–Broadway / Jackson Heights station (7, E, F, M, R) and the Q32, Q33, Q47, Q49 &amp; Q53 buses.</div></div>
+        <div class="row" style="margin-top:22px;"><span class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="lbl">Address</div><a href="https://maps.google.com/?q=40-16+74th+Street+Elmhurst+NY+11373" target="_blank" rel="noopener">40-16 74th Street<br>Elmhurst, NY 11373</a></div></div>
+        <div class="row"><span class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="14" rx="3"/><line x1="4" y1="10" x2="20" y2="10"/><circle cx="8.5" cy="13.5" r="1"/><circle cx="15.5" cy="13.5" r="1"/><path d="m8 17-2 4"/><path d="m16 17 2 4"/></svg></span><div><div class="lbl">Getting here</div>Steps from the 74th St–Broadway / Jackson Heights station (7, E, F, M, R) and the Q32, Q33, Q47, Q49 &amp; Q53 buses.</div></div>
         <div class="cta" style="margin-top:22px;"><a class="btn btn-gold" href="contact.html">Contact &amp; directions →</a></div>
       </div>
       <div class="info-card">
         <h3 style="margin-bottom:14px;color:#fff;">What to bring</h3>
-        <div class="row"><span class="ic">🪪</span><div><div class="lbl">Photo ID</div>Any government or school ID works.</div></div>
-        <div class="row"><span class="ic">💳</span><div><div class="lbl">Insurance card</div>If you have one. No insurance? We have clear self-pay pricing — see <a href="insurance.html" style="color:var(--marigold);text-decoration:underline;">insurance &amp; pricing</a>.</div></div>
-        <div class="row"><span class="ic">💊</span><div><div class="lbl">Your medications</div>A list, or simply the bottles.</div></div>
-        <div class="row"><span class="ic">🧾</span><div><div class="lbl">Recent records</div>Lab results or notes from other doctors, if you have them.</div></div>
+        <div class="row"><span class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="11" r="2"/><path d="M5 17c.5-1.5 1.5-2.5 3-2.5s2.5 1 3 2.5"/><line x1="14" y1="9" x2="19" y2="9"/><line x1="14" y1="13" x2="19" y2="13"/></svg></span><div><div class="lbl">Photo ID</div>Any government or school ID works.</div></div>
+        <div class="row"><span class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span><div><div class="lbl">Insurance card</div>If you have one. No insurance? We have clear self-pay pricing — see <a href="insurance.html" style="color:var(--marigold);text-decoration:underline;">insurance &amp; pricing</a>.</div></div>
+        <div class="row"><span class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 20.5a5 5 0 0 1-7.07-7.07l10-10a5 5 0 0 1 7.07 7.07z"/><line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/></svg></span><div><div class="lbl">Your medications</div>A list, or simply the bottles.</div></div>
+        <div class="row"><span class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><div><div class="lbl">Recent records</div>Lab results or notes from other doctors, if you have them.</div></div>
         <p style="margin:16px 0 0;color:rgba(255,255,255,.85);font-size:.95rem;">First visit? Here&#39;s <a href="blog-first-visit.html" style="color:var(--marigold);text-decoration:underline;">what to expect at your first appointment</a>.</p>
       </div>
     </div>
@@ -555,9 +573,9 @@
       <h2>Ready when <em>you</em> are.</h2>
       <p>Text, tap, or call — whatever&#39;s easiest. New patients welcome.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="tel:+17186827090">📞 Call (718) 682-7090</a>
-        <a class="btn btn-gold" href="https://wa.me/17186827090" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
-        <a class="btn btn-primary" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener" style="background:#fff;color:var(--forest);">📅 Book on Zocdoc</a>
+        <a class="btn btn-primary" href="tel:+17186827090"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call (718) 682-7090</a>
+        <a class="btn btn-gold" href="https://wa.me/17186827090" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg> Book on WhatsApp</a>
+        <a class="btn btn-primary" href="https://www.zocdoc.com/practice/elmhurst-medical-68107?insurance_carrier=-1&amp;insurance_plan=-1&amp;reason_visit=75&amp;dr_specialty=99&amp;LocIdent=153984&amp;isNewPatient=false&amp;widget=false" target="_blank" rel="noopener" style="background:#fff;color:var(--forest);"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Book on Zocdoc</a>
       </div>
       <div class="note">40-16 74th Street, Elmhurst, NY 11373 · Se habla español · বাংলায় কথা বলি</div>
     </div>
@@ -595,8 +613,8 @@
   </div>
 </footer>
 <div class="float">
-  <a class="wa" href="https://wa.me/17186827090" target="_blank" rel="noopener" aria-label="Book on WhatsApp">💬</a>
-  <a class="call" href="tel:+17186827090" aria-label="Call the clinic">📞</a>
+  <a class="wa" href="https://wa.me/17186827090" target="_blank" rel="noopener" aria-label="Book on WhatsApp"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg></a>
+  <a class="call" href="tel:+17186827090" aria-label="Call the clinic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
 </div>
 </body>
 </html>
