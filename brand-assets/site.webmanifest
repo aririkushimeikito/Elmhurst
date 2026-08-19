@@ -1,0 +1,14 @@
+{
+  "name": "Elmhurst Medical",
+  "short_name": "Elmhurst Medical",
+  "description": "Primary & urgent care in Elmhurst, Queens. Mon–Sat 10am–7:30pm.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF4E8",
+  "theme_color": "#0F7A6B",
+  "icons": [
+    { "src": "brand-assets/bloom-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "brand-assets/bloom-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "brand-assets/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
