@@ -57,3 +57,15 @@ so no code change is needed at cutover:
 - `docs/HANDOFF.md` — original developer handoff notes
 - `docs/Elmhurst-Medical-Brand-Guidelines.pdf` — brand colors, fonts, logo usage
 - `brand-guidelines.html` — internal brand reference page (noindexed)
+
+
+## Homepage redesign (reference-based, Aug 2026)
+
+The homepage (`index.html`) was rebuilt to a full editorial/landing layout inspired by a
+provided reference: a full-bleed hero with a transparent nav that turns solid on scroll,
+an intro split, a six-card photo-overlay services grid, a numbered "why choose us" 2x2,
+a visit/hours split with a Google-Maps-linked address, testimonial cards with review-source
+badges, a service-area chip cloud, an insurance strip, an FAQ accordion, and a forest CTA
+band. Brand colors, fonts (Bricolage Grotesque / Plus Jakarta Sans / Fraunces) and all
+copy are unchanged; SEO meta and JSON-LD are preserved. Interior pages keep the existing
+modernized design.
