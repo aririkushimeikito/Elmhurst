@@ -59,13 +59,12 @@ so no code change is needed at cutover:
 - `brand-guidelines.html` — internal brand reference page (noindexed)
 
 
-## Homepage redesign (reference-based, Aug 2026)
+## Homepage redesign (light reference, Oct 2026)
 
-The homepage (`index.html`) was rebuilt to a full editorial/landing layout inspired by a
-provided reference: a full-bleed hero with a transparent nav that turns solid on scroll,
-an intro split, a six-card photo-overlay services grid, a numbered "why choose us" 2x2,
-a visit/hours split with a Google-Maps-linked address, testimonial cards with review-source
-badges, a service-area chip cloud, an insurance strip, an FAQ accordion, and a forest CTA
-band. Brand colors, fonts (Bricolage Grotesque / Plus Jakarta Sans / Fraunces) and all
-copy are unchanged; SEO meta and JSON-LD are preserved. Interior pages keep the existing
-modernized design.
+The homepage (`index.html`) was rebuilt to a clean, light, friendly landing layout: a solid
+light sticky nav with centered links, a split hero with a working booking-request form card
+(composes a prefilled WhatsApp message — no backend), a six-card soft-rounded services grid,
+a dark "Modern care. A kinder approach." feature paired with a testimonial carousel, a stats
+row, an insurance strip, a service-area chip cloud, an FAQ accordion, and a sage CTA band.
+Brand colors, fonts and copy are unchanged; SEO meta and JSON-LD are preserved. Interior
+pages keep the existing modernized design.
