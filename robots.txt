@@ -1,7 +1,7 @@
 # Elmhurst Medical — elmhurstmedical.com
 User-agent: *
 Allow: /
-Disallow: /brand-guidelines.html
+Disallow: /brand-guidelines
 
 # AI / answer-engine crawlers are welcome
 User-agent: GPTBot
